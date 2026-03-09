@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+    padding-top: 100px;
+    background: linear-gradient(140deg, #934ef3, #13efff);
+    background-attachment: cover;
+    background-size: 100% 200%;
+    animation: gradient 8s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.55) transparent;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.75);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 0% 70%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0em;
+    font-weight: 900;
+    color: white;
+    margin: 0;
+    text-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.02em;
+}
+
+p {
+    font-family: 'Avenir';
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: 3px 3px 0 rgb(56, 56, 56)
+}
+
+hr {
+    margin: 30px auto;
+    border: none;
+    width: 75%;
+    height: 4px;
+    color: white;
+    background-image: linear-gradient(to right, transparent, white, transparent);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: var(--fade-in-from-transform, translateY(50px));
+    }
+    to {
+        opacity: 1;
+        transform: var(--fade-in-to-transform, translate(0, 0));
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.eventBG {
+    width: 85%;
+    height: 600px;
+    border-radius: 30px;
+    margin: auto;
+    margin-bottom: 80px;
+    padding: 30px;
+    overflow-y: auto;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+}

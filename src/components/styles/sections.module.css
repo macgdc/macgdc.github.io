@@ -1,0 +1,30 @@
+.sectionTitle {
+    margin: 40px 0 30px 90px;
+    font-size: 70px;
+    opacity: 0;
+    animation-delay: 0.1s;
+    text-shadow: 7px 7px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sectionTitleHome {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.inlineSubtext {
+    margin: 0 0 0 30px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.45);
+}
+
+.eventBg {
+    width: 85%;
+    height: 550px;
+}
+
+.eventBgHome {
+    width: 75%;
+    height: 400px;
+}
