@@ -44,7 +44,7 @@
 }
 
 .statLabel {
-    font-family: 'Avenir', sans-serif;
+    font-family: var(--font-secondary);
     font-size: 24px;
     color: white;
     font-weight: 600;
@@ -53,7 +53,7 @@
 }
 
 .recurringLabel {
-    font-family: 'Avenir', sans-serif;
+    font-family: var(--font-secondary);
     font-size: 14px;
     color: white;
     font-weight: 600;
