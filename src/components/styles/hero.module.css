@@ -35,6 +35,7 @@
     position: relative;
     z-index: 1;
     flex: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,19 +139,29 @@
     line-height: 0.95;
 }
 
+.heroSubGroup {
+    width: max-content;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .heroSub {
     opacity: 0;
     --fade-in-from-transform: translateX(-600px);
-    --fade-in-to-transform: translateX(15px);
+    --fade-in-to-transform: translateX(0);
     font-size: clamp(30px, 4.2vw, 70px);
     line-height: 1;
     animation-delay: 0.2s;
+    white-space: nowrap;
 }
 
 .heroSub2 {
+    align-self: center;
     opacity: 0;
-    --fade-in-from-transform: translateX(-300px);
-    --fade-in-to-transform: translateX(300px);
+    --fade-in-from-transform: translateX(-600px);
+    --fade-in-to-transform: translateX(0);
     font-size: clamp(30px, 4.2vw, 70px);
     line-height: 1;
     animation-delay: 0.4s;
@@ -208,6 +219,10 @@
         z-index: 2;
         align-items: center;
         text-align: center;
+    }
+
+    .heroSubGroup {
+        width: 100%;
     }
 
     .heroTitle,

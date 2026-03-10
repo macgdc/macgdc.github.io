@@ -38,6 +38,12 @@
         margin: 18px 0;
     }
 
+    .inlineSubtext {
+        display: block;
+        margin: 4px 0 0 0;
+        font-size: clamp(14px, 3.5vw, 20px);
+    }
+
     .eventBg,
     .eventBgHome {
         width: min(84vw, 760px);

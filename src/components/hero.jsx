@@ -8,8 +8,10 @@ function Hero() {
         <div className={styles.heroContainer}>
             <div className={styles.heroContent}>
                 <h1 className={`${styles.heroTitle} fadeIn`}><i>MCMASTER</i></h1>
-                <h1 className={`${styles.heroSub} fadeIn`}><i>GAME DEVELOPMENT</i></h1>
-                <h1 className={`${styles.heroSub2} fadeIn`}><i>CLUB</i></h1>
+                <div className={styles.heroSubGroup}>
+                    <h1 className={`${styles.heroSub} fadeIn`}><i>GAME DEVELOPMENT</i></h1>
+                    <h1 className={`${styles.heroSub2} fadeIn`}><i>CLUB</i></h1>
+                </div>
                 
                 <p className={`${styles.tagline} fadeIn`}>
                     where your{' '}
@@ -34,23 +36,23 @@ function Hero() {
                 <h2 className={styles.actionTitle}><i>FIND OUT MORE!</i></h2>
                 <div className={styles.buttonGrid}>
                     <a href="https://discord.com/invite/Gsvp8JKF66" target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>
-                        <img src="/images/discord.svg" alt="Discord"/>
+                        <img src="/images/discord.webp" alt="Discord"/>
                         <span>DISCORD</span>
                     </a>
                     <a href="https://www.instagram.com/macgdc/" target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>
-                        <img src="/images/instagram.svg" alt="Instagram"/>
+                        <img src="/images/instagram.webp" alt="Instagram"/>
                         <span>INSTAGRAM</span>
                     </a>
                     <a href="https://macgdc.itch.io/" target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>
-                        <img src="/images/itchio.svg" alt="itch.io"/>
+                        <img src="/images/itchio.png" alt="itch.io"/>
                         <span>ITCH.IO</span>
                     </a>
                     <a href="https://www.youtube.com/@MacGDC" target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>
-                        <img src="/images/youtube.svg" alt="YouTube" />
+                        <img src="/images/youtube.webp" alt="YouTube" />
                         <span>YOUTUBE</span>
                     </a>
                     <a href="https://www.bouncelife.com/organizations/6686e1838b391c59c2a6f9df" target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>
-                        <img src="/images/bouncelife.svg" alt="Bouncelife" />
+                        <img src="/images/bouncelife.png" alt="Bouncelife" />
                         <span>BOUNCELIFE</span>
                     </a>
                     <a href="https://linktr.ee/macgdc" target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>
