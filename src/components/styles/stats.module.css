@@ -4,10 +4,12 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    gap: 10px;
     padding: 0 40px;
     width: 70%;
     max-width: 1600px;
-    height: 250px;
+    min-height: 250px;
+    height: auto;
     border-radius: 40px;
     margin: 40px auto;
     position: relative;
@@ -19,7 +21,7 @@
     position: relative;
     align-items: center;
     text-align: center;
-    padding: 20px 60px;
+    padding: 16px 28px;
     border-radius: 50px;
     transition: 0.2s ease;
 }
@@ -38,6 +40,7 @@
 
 .bigstat {  
     font-size: 60px;
+    line-height: 1;
     color: white;
     font-weight: 900;
     text-shadow: 3px 3px 0 #0a78ac, 6px 6px 0 #003a63;
@@ -48,6 +51,7 @@
     font-size: 24px;
     color: white;
     font-weight: 600;
+    line-height: 1.15;
     letter-spacing: 0.05em;
     text-shadow: 3px 3px 0 #0a78ac, 6px 6px 0 #003a63;
 }
@@ -57,6 +61,9 @@
     font-size: 14px;
     color: white;
     font-weight: 600;
+    line-height: 1.2;
+    margin-top: 4px;
+    max-width: 200px;
     letter-spacing: 0.05em;
     text-shadow: 1px 1px 0 #0a78ac, 3px 3px 0 #003a63;
 }

@@ -7,6 +7,7 @@ function GamesPreview() {
         <h1 className={`${styles2.sectionTitle} fadeIn`}> 
             <i>FEATURED GAMES</i>
             <span className={styles2.inlineSubtext}><i>(made by our talented members!)</i></span>
+            
         </h1>
         </>
     );
