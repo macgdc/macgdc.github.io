@@ -1,6 +1,6 @@
 .sectionTitle {
-    margin: 40px 0 30px 90px;
-    font-size: 70px;
+    margin: 40px 0 30px clamp(16px, 6vw, 90px);
+    font-size: clamp(36px, 5vw, 70px);
     opacity: 0;
     animation-delay: 0.1s;
     text-shadow: 7px 7px 0 rgba(0, 0, 0, 0.5);
@@ -12,8 +12,8 @@
 }
 
 .inlineSubtext {
-    margin: 0 0 0 30px;
-    font-size: 40px;
+    margin: 0 0 0 16px;
+    font-size: clamp(18px, 2.8vw, 40px);
     font-style: normal;
     font-weight: 600;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.45);
@@ -27,4 +27,20 @@
 .eventBgHome {
     width: 75%;
     height: 400px;
+}
+
+@media (max-width: 900px) {
+    .sectionTitle {
+        margin: 24px 0 18px 16px;
+    }
+
+    .sectionTitleHome {
+        margin: 18px 0;
+    }
+
+    .eventBg,
+    .eventBgHome {
+        width: min(84vw, 760px);
+        height: auto;
+    }
 }

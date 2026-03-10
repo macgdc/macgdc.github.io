@@ -4,9 +4,9 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    gap: 10px;
-    padding: 0 40px;
-    width: 70%;
+    gap: clamp(8px, 1vw, 16px);
+    padding: 0 clamp(10px, 2vw, 40px);
+    width: min(92vw, 1200px);
     max-width: 1600px;
     min-height: 250px;
     height: auto;
@@ -21,7 +21,7 @@
     position: relative;
     align-items: center;
     text-align: center;
-    padding: 16px 28px;
+    padding: clamp(10px, 1.3vw, 16px) clamp(10px, 2vw, 28px);
     border-radius: 50px;
     transition: 0.2s ease;
 }
@@ -31,8 +31,8 @@
 }
 
 .statIcon {
-    width: 120px;
-    height: 120px;
+    width: clamp(70px, 8vw, 120px);
+    height: clamp(70px, 8vw, 120px);
     margin-bottom: 10px;
     object-fit: contain;
     filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.5));
@@ -40,7 +40,7 @@
 
 .bigstat {  
     display: inline-block;
-    font-size: 60px;
+    font-size: clamp(34px, 4vw, 60px);
     line-height: 1;
     min-width: 4ch;
     text-align: center;
@@ -54,7 +54,7 @@
 
 .statLabel {
     font-family: var(--font-secondary);
-    font-size: 24px;
+    font-size: clamp(16px, 2vw, 24px);
     color: white;
     font-weight: 600;
     line-height: 1.15;
@@ -64,12 +64,34 @@
 
 .recurringLabel {
     font-family: var(--font-secondary);
-    font-size: 14px;
+    font-size: clamp(11px, 1.2vw, 14px);
     color: white;
     font-weight: 600;
     line-height: 1.2;
     margin-top: 4px;
-    max-width: 200px;
+    max-width: 22ch;
     letter-spacing: 0.05em;
     text-shadow: 1px 1px 0 #0a78ac, 3px 3px 0 #003a63;
+}
+
+@media (max-width: 900px) {
+    .stats {
+        width: min(95vw, 700px);
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: stretch;
+        justify-items: stretch;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .statItem {
+        border-radius: 28px;
+    }
+}
+
+@media (max-width: 560px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
 }

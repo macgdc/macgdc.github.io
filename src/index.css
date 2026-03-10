@@ -78,10 +78,11 @@
 
 body {
     margin: 0;
+    scroll-behavior: smooth;
     max-width: 100%;
     overflow-x: hidden;
     min-height: 100vh;
-    padding-top: 100px;
+    padding-top: 88px;
     background: linear-gradient(140deg, #934ef3, #13efff);
     background-attachment: cover;
     background-size: 100% 200%;
@@ -120,6 +121,17 @@ body {
     background: rgba(255, 255, 255, 0.75);
 }
 
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 0%;
@@ -145,7 +157,7 @@ p {
     font-family: var(--font-secondary);
     color: white;
     font-weight: 600;
-    font-size: 20px;
+    font-size: clamp(16px, 1.2vw, 20px);
     text-shadow: 3px 3px 0 rgb(56, 56, 56)
 }
 
@@ -174,14 +186,26 @@ hr {
 }
 
 .eventBG {
-    width: 85%;
-    height: 600px;
+    width: min(85vw, 1400px);
+    height: clamp(340px, 60vh, 600px);
     border-radius: 30px;
     margin: auto;
     margin-bottom: 80px;
-    padding: 30px;
+    padding: clamp(16px, 2vw, 30px);
     overflow-y: auto;
     list-style-type: none;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid white;
+}
+
+@media (max-width: 900px) {
+    body {
+        padding-top: 72px;
+    }
+
+    .eventBG {
+        width: 88vw;
+        border-radius: 22px;
+        margin-bottom: 48px;
+    }
 }
