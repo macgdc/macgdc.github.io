@@ -39,10 +39,16 @@
 }
 
 .bigstat {  
+    display: inline-block;
     font-size: 60px;
     line-height: 1;
+    min-width: 4ch;
+    text-align: center;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: 'tnum' 1;
     color: white;
-    font-weight: 400;
+    font-weight: 600;
     text-shadow: 3px 3px 0 #0a78ac, 6px 6px 0 #003a63;
 }
 
