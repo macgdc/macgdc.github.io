@@ -49,7 +49,7 @@
     font-feature-settings: 'tnum' 1;
     color: white;
     font-weight: 600;
-    text-shadow: 3px 3px 0 #0a78ac, 6px 6px 0 #003a63;
+    text-shadow: calc(3px * var(--text-shadow-scale)) calc(3px * var(--text-shadow-scale)) 0 #0a78ac, calc(6px * var(--text-shadow-scale)) calc(6px * var(--text-shadow-scale)) 0 #003a63;
 }
 
 .statLabel {
@@ -59,7 +59,7 @@
     font-weight: 600;
     line-height: 1.15;
     letter-spacing: 0.05em;
-    text-shadow: 3px 3px 0 #0a78ac, 6px 6px 0 #003a63;
+    text-shadow: calc(3px * var(--text-shadow-scale)) calc(3px * var(--text-shadow-scale)) 0 #0a78ac, calc(6px * var(--text-shadow-scale)) calc(6px * var(--text-shadow-scale)) 0 #003a63;
 }
 
 .recurringLabel {
@@ -71,7 +71,7 @@
     margin-top: 4px;
     max-width: 22ch;
     letter-spacing: 0.05em;
-    text-shadow: 1px 1px 0 #0a78ac, 3px 3px 0 #003a63;
+    text-shadow: calc(1px * var(--text-shadow-scale)) calc(1px * var(--text-shadow-scale)) 0 #0a78ac, calc(3px * var(--text-shadow-scale)) calc(3px * var(--text-shadow-scale)) 0 #003a63;
 }
 
 @media (max-width: 900px) {
@@ -88,10 +88,24 @@
     .statItem {
         border-radius: 28px;
     }
-}
 
-@media (max-width: 360px) {
-    .stats {
-        grid-template-columns: 1fr;
+    .statIcon {
+        width: clamp(56px, 14vw, 88px);
+        height: clamp(56px, 14vw, 88px);
+    }
+
+    .bigstat {
+        min-width: 0;
+        font-size: clamp(24px, 7vw, 38px);
+    }
+
+    .statLabel {
+        font-size: clamp(12px, 3.6vw, 17px);
+        letter-spacing: 0.03em;
+    }
+
+    .recurringLabel {
+        font-size: clamp(10px, 2.7vw, 12px);
+        max-width: 16ch;
     }
 }

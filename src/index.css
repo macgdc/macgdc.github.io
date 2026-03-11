@@ -74,6 +74,7 @@
 
 :root {
     --font-secondary: 'Avenir Web', sans-serif;
+    --text-shadow-scale: 1;
 }
 
 body {
@@ -98,14 +99,6 @@ body {
     min-height: 100vh;
 }
 
-* {
-    scrollbar-width: none;
-}
-
-*::-webkit-scrollbar {
-    display: none;
-}
-
 @keyframes gradient {
     0% {
         background-position: 0% 0%;
@@ -123,7 +116,7 @@ h1 {
     letter-spacing: 0em;
     color: white;
     margin: 0;
-    text-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5);
+    text-shadow: calc(10px * var(--text-shadow-scale)) calc(10px * var(--text-shadow-scale)) 0 rgba(0, 0, 0, 0.5);
     letter-spacing: 0.02em;
 }
 
@@ -132,7 +125,7 @@ p {
     color: white;
     font-weight: 600;
     font-size: clamp(16px, 1.2vw, 20px);
-    text-shadow: 3px 3px 0 rgb(56, 56, 56)
+    text-shadow: calc(3px * var(--text-shadow-scale)) calc(3px * var(--text-shadow-scale)) 0 rgb(56, 56, 56)
 }
 
 hr {
@@ -173,17 +166,36 @@ hr {
 }
 
 @media (max-width: 900px) {
+    :root {
+        --text-shadow-scale: 0.62;
+    }
+
     body {
         padding-top: 72px;
     }
 
     .eventBG {
         width: 88vw;
+        height: auto;
+        max-height: none;
         border-radius: 22px;
-        margin-bottom: 48px;
+        margin: 0 auto 48px;
+        padding: 12px;
+        padding-inline-start: 12px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(72vw, 1fr);
+        gap: 12px;
+        align-items: start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: none;
+        -webkit-overflow-scrolling: touch;
     }
 
-    h1 {
-        text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+    .eventBG > li {
+        margin: 0;
+        min-width: 0;
     }
+
 }

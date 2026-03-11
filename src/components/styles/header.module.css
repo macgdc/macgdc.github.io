@@ -43,7 +43,7 @@
     padding: 0px 15px;
     color: white;
     text-decoration: none;
-    text-shadow: 3px 3px 0 #000;
+    text-shadow: calc(3px * var(--text-shadow-scale)) calc(3px * var(--text-shadow-scale)) 0 #000;
     transition: .2s ease-in-out;
 }
 

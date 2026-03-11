@@ -3,7 +3,7 @@
     font-size: clamp(36px, 5vw, 70px);
     opacity: 0;
     animation-delay: 0.1s;
-    text-shadow: 7px 7px 0 rgba(0, 0, 0, 0.5);
+    text-shadow: calc(7px * var(--text-shadow-scale)) calc(7px * var(--text-shadow-scale)) 0 rgba(0, 0, 0, 0.5);
 }
 
 .sectionTitleHome {
@@ -16,7 +16,7 @@
     font-size: clamp(18px, 2.8vw, 40px);
     font-style: normal;
     font-weight: 600;
-    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.45);
+    text-shadow: calc(4px * var(--text-shadow-scale)) calc(4px * var(--text-shadow-scale)) 0 rgba(0, 0, 0, 0.45);
 }
 
 .eventBg {
@@ -32,6 +32,8 @@
 @media (max-width: 900px) {
     .sectionTitle {
         margin: 24px 0 18px 16px;
+        font-size: clamp(30px, 8vw, 46px);
+        text-shadow: calc(7px * var(--text-shadow-scale)) calc(7px * var(--text-shadow-scale)) 0 rgba(0, 0, 0, 0.5);
     }
 
     .sectionTitleHome {
@@ -48,5 +50,12 @@
     .eventBgHome {
         width: min(84vw, 760px);
         height: auto;
+    }
+}
+
+@media (max-width: 430px) {
+    .sectionTitle {
+        margin: 18px 0 14px 12px;
+        font-size: clamp(24px, 9vw, 34px);
     }
 }
