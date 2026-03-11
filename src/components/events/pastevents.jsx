@@ -18,11 +18,13 @@ function PastEvents() {
                     shape the games we love. Refreshments will be provided, and after their presentation we'll be hosting a small social and 
                     then game design workshop on prototypes & constraint-based design! We hope to see you there! Find out more about Adrienne 
                     at <a href='https://www.insertdisc5.com/' target="_blank" rel="noopener noreferrer" style={{color: "white"}}>https://www.insertdisc5.com/</a>
+                    <br/>In case you missed it, there is a recording of the event at the link below!
                     </>}
                     date = "March 9th, 2026"
                     imagePath = '/images/events/genderdiversity2026.png'
                     location = 'PGCLL B131'
                     time = '6:00 - 9:00 PM'
+                    link = "https://www.youtube.com/live/8yzkASNKOn0"
                 /></li>
                 
                 <li><Event

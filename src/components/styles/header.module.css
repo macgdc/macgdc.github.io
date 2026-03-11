@@ -6,7 +6,7 @@
     z-index: 1000;
     box-sizing: border-box;
 
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);   
     

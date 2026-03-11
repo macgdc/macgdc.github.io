@@ -26,6 +26,21 @@ function CurrentEvents( { home = false } ) {
                 /></li>
 
                 <li><Event
+                    name="Visual Novel Workshop 2026"
+                    description={<>
+                    Our second event of the game jam is here! Join us and the McMaster Fanfiction Club for a tutorial 
+                    on how to create your very own visual novel using ren'py! All skill levels are welcome, and this 
+                    is a perfect opportunity for you if you don't know how to code, since ren'py is a beginner-friendly
+                    tool that we'll be showing you how to use step-by-step. The Visual Novel Workshop will be taking place 
+                    Monday, March 16, 6:30 - 9:00 PM in ETB 119, we hope to see you there!
+                    </>}
+                    date = "March 16th, 2026"
+                    imagePath = '/images/events/visualnovel.png'
+                    location = 'ETB 119'
+                    time = '6:30PM - 9:00 PM'
+                /></li>
+
+                <li><Event
                     name="Gamedev Circles"
                     description={<>
                     Drop-in casual weekly meetings to hang out with other gamedevs, 
@@ -36,6 +51,7 @@ function CurrentEvents( { home = false } ) {
                     date = "Every Thursday (unless stated otherwise)"
                     location = 'Announced on Discord'
                     time = 'Announced on Discord'
+                    link = "https://discord.com/invite/Gsvp8JKF66"
                 /></li>
             </ul>
         </>

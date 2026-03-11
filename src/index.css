@@ -86,7 +86,7 @@ body {
     background: linear-gradient(140deg, #934ef3, #13efff);
     background-attachment: cover;
     background-size: 100% 200%;
-    animation: gradient 8s ease-in-out infinite;
+    animation: gradient 5s ease-in-out infinite;
     display: flex;
     flex-direction: column;
 }
@@ -99,37 +99,11 @@ body {
 }
 
 * {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(255, 255, 255, 0.55) transparent;
+    scrollbar-width: none;
 }
 
 *::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-*::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.55);
-    border-radius: 999px;
-}
-
-*::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.75);
-}
-
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-html::-webkit-scrollbar-track,
-body::-webkit-scrollbar-track {
-    background: transparent;
+    display: none;
 }
 
 @keyframes gradient {
@@ -207,5 +181,9 @@ hr {
         width: 88vw;
         border-radius: 22px;
         margin-bottom: 48px;
+    }
+
+    h1 {
+        text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
     }
 }
