@@ -13,8 +13,8 @@ function CurrentEvents( { home = false } ) {
                     description={<>
                     Our annual game jam is back, bigger and better than ever! If you don't know what a game
                     jam is, it's a small period of time where you or a team come together to create a game based on a theme, 
-                    with prizes for the top three. This year, we're being sponsored by Ubisoft Toronto, Studio Resonance, and 
-                    Adam Jolly! This game jam will run from March 5 - March 26, all of the info relating to it can be found in 
+                    with prizes for the top three. This year, we're being sponsored by Ubisoft Toronto, Studio Resonance, the McMaster 
+                    Student Union, and Adam Jolly! This game jam will run from March 5 - March 26, all of the info relating to it can be found in 
                     the #game-jam-2026 channel on our Discord and itch.io page linked below. This year's theme is <b><u>visibility.</u> </b> 
                     We hope to see you join, and we're so excited to see what everyone makes!
                     </>}
