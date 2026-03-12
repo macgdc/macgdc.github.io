@@ -27,6 +27,7 @@ function App() {
                                 <CurrentEvents home="true"/>
                                 <hr className='fadeIn'/>
                                 <GamesPreview/>
+                                <hr className='fadeIn'/>
                             </>
                       } 
                     />
