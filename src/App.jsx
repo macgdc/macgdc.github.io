@@ -1,5 +1,7 @@
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import styles from './components/styles/page.module.css'
+import pageStyles from './components/styles/page.module.css'
+import sectionStyles from './components/styles/sections.module.css'
+import sponsorStyles from './components/styles/sponsors.module.css'
 import Header from './components/header.jsx'
 import Footer from './components/footer.jsx'
 import Hero from './components/hero.jsx'
@@ -28,14 +30,22 @@ function App() {
                                 <hr className='fadeIn'/>
                                 <GamesPreview/>
                                 <hr className='fadeIn'/>
+                                <h1 className={`${sectionStyles.sectionTitle} ${sectionStyles.sectionTitleCentered} fadeIn`}> 
+                                  <i>SPONSORS</i> </h1>
+                                <p className={`${pageStyles.pageLead} fadeIn`}>
+                                  A big thank you to our wonderful sponsors! Our game jams wouldn't be possible
+                                  without them!</p>
+                                <Sponsors/>
+                                
                             </>
                       } 
                     />
                     <Route path="/events" element={
                             <>
-                          <h1 className={`${styles.pageTitle} fadeIn`}> <i>EVENTS</i> </h1>
+                          <h1 className={`${pageStyles.pageTitle} fadeIn`}> <i>EVENTS</i> </h1>
                                 <hr className="fadeIn"/>
-                                <p className={`${styles.pageLead} fadeIn`}>Please check frequently to stay up to date! This page is updated often!</p>
+                                <p className={`${pageStyles.pageLead} fadeIn`}>
+                                  Please check frequently to stay up to date! This page is updated often!</p>
                                 <CurrentEvents/>
                                 <PastEvents/>
                             </>
@@ -49,13 +59,30 @@ function App() {
                     />
                     <Route path="/about" element={
                             <>  
-                              <About />
+                                <About />
                             </>
                       } 
                     />
                     <Route path="/sponsors" element={
                             <>
-                                <Sponsors />
+                                <h1 className={`${pageStyles.pageTitle} fadeIn`}> <i>SPONSORS</i> </h1>
+                                <hr className="fadeIn"/>
+                                <p className={`${pageStyles.pageLead} fadeIn`}>
+                                  Game jams are a core part of our club and let our members develop their skills. However, we wouldn't
+                                  be where we are now without our lovely sponsors. If you would like to reach out about sponsorship, please
+                                  contact us! We are currently working on a new sponsorship package, but please download the current one for 
+                                  more information on sponsorships. Sponsors will get added to our list below!</p>
+                                <div className={`${sponsorStyles.sponsorActions} fadeIn`}>
+                                  <a href="mailto:macgdc@mcmaster.ca" className={sponsorStyles.sponsorActionBtn}>
+                                      <img src="/icons/email.svg" alt="Contact Us" />
+                                      <span>CONTACT US</span>
+                                  </a>
+                                  <a href="./MacGDC_Sponsorship_Package_2025.pdf" className={sponsorStyles.sponsorActionBtn} download>
+                                      <img src="/icons/download.png" alt="Download"/>
+                                      <span>DOWNLOAD SPONSOR PACKAGE</span>
+                                  </a>
+                               </div>
+                               <Sponsors/>
                             </>
                       } 
                     />

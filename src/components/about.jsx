@@ -11,8 +11,8 @@ function About() {
             We host annual game jams (usually with awards!), frequent workshops, and weekly meetings to help our members develop their skills and meet
             others! Come join us if you're interested in coding, art, game design, music, or even if you just like playing games!
             </p>
-            <h1 className={`${styles2.sectionTitle} fadeIn`}> 
-                        <i>MEET THE TEAM</i> </h1>
+            <h1 className={`${styles2.sectionTitle} ${styles2.sectionTitleCentered} fadeIn`}> 
+                        <i>OUR TEAM</i> </h1>
 
 
         </>

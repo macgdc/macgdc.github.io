@@ -45,6 +45,7 @@
     position: relative;
     z-index: 2;
     flex: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,6 +80,7 @@
     background: rgb(0, 0, 0, 0.7);
     border-radius: 0.9375rem;
     padding: 0.9375rem;
+    min-width: 0;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -104,6 +106,8 @@
     color: white;
     font-size: clamp(1rem, 1.6vw, 1.5rem);
     font-weight: 600;
+    min-width: 0;
+    overflow-wrap: anywhere;
     letter-spacing: 0.07em;
     text-shadow: calc(0.1875rem * var(--text-shadow-scale)) calc(0.1875rem * var(--text-shadow-scale)) 0 rgba(112, 112, 112, 0.633);
 }
@@ -194,6 +198,36 @@
 
     .heroContainer::after {
         width: 68%;
+    }
+
+    .actionSection {
+        padding-left: clamp(0.5rem, 1.5vw, 1.25rem);
+    }
+
+    .buttonGrid {
+        max-width: 25rem;
+        gap: 0.625rem;
+    }
+
+    .socialBtn {
+        padding: 0.75rem;
+    }
+
+    .socialBtn img {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.625rem;
+    }
+
+    .socialBtn span {
+        font-size: clamp(0.875rem, 1.35vw, 1.125rem);
+        letter-spacing: 0.04em;
+    }
+
+    .sponsorBtn {
+        max-width: 25rem;
+        padding: clamp(0.75rem, 1.6vw, 1.125rem);
+        font-size: clamp(0.9375rem, 1.35vw, 1.125rem);
     }
 }
 
