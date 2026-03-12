@@ -37,7 +37,7 @@ function GamesPreview() {
             />
             <GameCard
                 name="Desmond the Moon Bear"
-                creator="CowSoCool37"
+                creator="CowSoCool37, EricMBu"
                 imagePath="./images/games/desmond.png"
                 link="https://cowsocool37.itch.io/desmond-the-moon-bear"
             />
