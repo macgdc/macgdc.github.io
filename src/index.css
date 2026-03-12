@@ -83,10 +83,13 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     min-height: 100vh;
-    padding-top: 88px;
-    background: linear-gradient(140deg, #934ef3, #13efff);
+    padding-top: 5.5rem;
+    background-image:
+        repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.18) 0 0.0625rem, transparent 0.0625rem 2.75rem),
+        repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.18) 0 0.0625rem, transparent 0.0625rem 2.75rem),
+        linear-gradient(140deg, #934ef3, #13efff);
     background-attachment: cover;
-    background-size: 100% 200%;
+    background-size: auto, auto, 100% 200%;
     animation: gradient 5s ease-in-out infinite;
     display: flex;
     flex-direction: column;
@@ -101,22 +104,22 @@ body {
 
 @keyframes gradient {
     0% {
-        background-position: 0% 0%;
+        background-position: 0 0, 0 0, 0% 0%;
     }
     50% {
-        background-position: 0% 70%;
+        background-position: 0 0, 0 0, 0% 70%;
     }
     100% {
-        background-position: 0% 0%;
+        background-position: 0 0, 0 0, 0% 0%;
     }
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
     letter-spacing: 0em;
     color: white;
     margin: 0;
-    text-shadow: calc(10px * var(--text-shadow-scale)) calc(10px * var(--text-shadow-scale)) 0 rgba(0, 0, 0, 0.5);
+    text-shadow: calc(0.625rem * var(--text-shadow-scale)) calc(0.625rem * var(--text-shadow-scale)) 0 rgba(0, 0, 0, 0.5);
     letter-spacing: 0.02em;
 }
 
@@ -124,15 +127,15 @@ p {
     font-family: var(--font-secondary);
     color: white;
     font-weight: 600;
-    font-size: clamp(16px, 1.2vw, 20px);
-    text-shadow: calc(3px * var(--text-shadow-scale)) calc(3px * var(--text-shadow-scale)) 0 rgb(56, 56, 56)
+    font-size: clamp(1rem, 1.2vw, 1.25rem);
+    text-shadow: calc(0.1875rem * var(--text-shadow-scale)) calc(0.1875rem * var(--text-shadow-scale)) 0 rgb(56, 56, 56)
 }
 
 hr {
-    margin: 30px auto;
+    margin: 1.875rem auto;
     border: none;
     width: 75%;
-    height: 4px;
+    height: 0.25rem;
     color: white;
     background-image: linear-gradient(to right, transparent, white, transparent);
 }
@@ -140,7 +143,7 @@ hr {
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: var(--fade-in-from-transform, translateY(50px));
+        transform: var(--fade-in-from-transform, translateY(3.125rem));
     }
     to {
         opacity: 1;
@@ -153,39 +156,39 @@ hr {
 }
 
 .eventBG {
-    width: min(85vw, 1400px);
-    height: clamp(340px, 60vh, 600px);
-    border-radius: 30px;
+    width: min(85vw, 87.5rem);
+    height: clamp(21.25rem, 60vh, 37.5rem);
+    border-radius: 1.875rem;
     margin: auto;
-    margin-bottom: 80px;
-    padding: clamp(16px, 2vw, 30px);
+    margin-bottom: 5rem;
+    padding: clamp(1rem, 2vw, 1.875rem);
     overflow-y: auto;
     list-style-type: none;
     background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid white;
+    border: 0.125rem solid white;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
     :root {
         --text-shadow-scale: 0.62;
     }
 
     body {
-        padding-top: 72px;
+        padding-top: 4.5rem;
     }
 
     .eventBG {
         width: 88vw;
         height: auto;
         max-height: none;
-        border-radius: 22px;
-        margin: 0 auto 48px;
-        padding: 12px;
-        padding-inline-start: 12px;
+        border-radius: 1.375rem;
+        margin: 0 auto 3rem;
+        padding: 0.75rem;
+        padding-inline-start: 0.75rem;
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: minmax(72vw, 1fr);
-        gap: 12px;
+        gap: 0.75rem;
         align-items: start;
         overflow-x: auto;
         overflow-y: hidden;

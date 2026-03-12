@@ -5,7 +5,7 @@ function Event({
     name = 'Event Name',
     description = 'Event description goes here.',
     date = 'N/A',
-    imagePath = '/images/logo_white.svg',
+    imagePath = '/icons/logo_white.svg',
     location = 'N/A',
     time = 'N/A',
     link = '',

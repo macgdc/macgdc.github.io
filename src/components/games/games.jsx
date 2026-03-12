@@ -1,4 +1,5 @@
-import styles from './styles/page.module.css'
+import styles from './../styles/page.module.css'
+import GameCard from './gamecard';
 
 function Games() {
     return (

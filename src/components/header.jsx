@@ -7,10 +7,10 @@ function Header() {
             <div className={styles.navbar}>
                 <div className={styles.navLeft}>
                     <Link to="/">
-                        <img src="/images/logo_white.svg" alt="Logo" className={styles.logo}/>
+                        <img src="/icons/logo_white.svg" alt="Logo" className={styles.logo}/>
                     </Link>
                 </div>
-                <div className={styles.navCenter}>
+                <div className={styles.navRight}>
                     <Link className={styles.navlink} to="/"><p>Home</p></Link>
                     <Link className={styles.navlink} to="/events"><p>Events</p></Link>
                     {/* <Link className={styles.navlink} to="/games"><p>Games</p></Link> */}

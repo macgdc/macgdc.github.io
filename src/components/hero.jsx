@@ -36,27 +36,27 @@ function Hero() {
                 <h2 className={styles.actionTitle}><i>FIND OUT MORE!</i></h2>
                 <div className={styles.buttonGrid}>
                     <a href="https://discord.com/invite/Gsvp8JKF66" target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>
-                        <img src="/images/discord.webp" alt="Discord"/>
+                        <img src="/icons/discord.webp" alt="Discord"/>
                         <span>DISCORD</span>
                     </a>
                     <a href="https://www.instagram.com/macgdc/" target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>
-                        <img src="/images/instagram.webp" alt="Instagram"/>
+                        <img src="/icons/instagram.webp" alt="Instagram"/>
                         <span>INSTAGRAM</span>
                     </a>
                     <a href="https://macgdc.itch.io/" target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>
-                        <img src="/images/itchio.png" alt="itch.io"/>
+                        <img src="/icons/itchio.png" alt="itch.io"/>
                         <span>ITCH.IO</span>
                     </a>
                     <a href="https://www.youtube.com/@MacGDC" target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>
-                        <img src="/images/youtube.webp" alt="YouTube" />
+                        <img src="/icons/youtube.webp" alt="YouTube" />
                         <span>YOUTUBE</span>
                     </a>
                     <a href="https://www.bouncelife.com/organizations/6686e1838b391c59c2a6f9df" target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>
-                        <img src="/images/bouncelife.png" alt="Bouncelife" />
+                        <img src="/icons/bouncelife.png" alt="Bouncelife" />
                         <span>BOUNCELIFE</span>
                     </a>
                     <a href="https://linktr.ee/macgdc" target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>
-                        <img src="/images/linktree-white-icon.webp" alt="Linktree" />
+                        <img src="/icons/linktree-white-icon.webp" alt="Linktree" />
                         <span>LINKTREE</span>
                     </a>
                 </div>

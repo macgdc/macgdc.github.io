@@ -4,7 +4,7 @@ import styles from '../styles/sections.module.css'
 function CurrentEvents( { home = false } ) {
     return (
         <>
-        <h1 className={`${styles.sectionTitle} ${home ? styles.sectionTitleHome : ''} fadeIn`}> 
+        <h1 className={`${styles.sectionTitle} ${home ? styles.sectionTitleCentered : ''} fadeIn`}> 
             <i>CURRENT EVENTS</i> </h1>
             <ul className={`eventBG ${styles.eventBg} ${home ? styles.eventBgHome : ''} fadeIn`}>
                 {/* Copy and paste the entire list element below to make more events; sorry if clunky - Aiden */}

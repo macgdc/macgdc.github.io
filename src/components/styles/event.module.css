@@ -1,15 +1,15 @@
 .eventCard {
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     display: flex;
-    margin-top: 10px;
-    gap: clamp(12px, 2vw, 30px);
-    padding: clamp(12px, 1.5vw, 18px);
+    margin-top: 0.625rem;
+    gap: clamp(0.75rem, 2vw, 1.875rem);
+    padding: clamp(0.75rem, 1.5vw, 1.125rem);
     box-sizing: border-box;
     align-items: stretch;
-    border: 2px solid white;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+    border: 0.125rem solid white;
+    box-shadow: 0 0.625rem 1.75rem rgba(0, 0, 0, 0.35);
     transition: 0.2s ease;
 }
 
@@ -19,12 +19,12 @@
 }
 
 .eventImage {
-    width: clamp(130px, 18vw, 200px);
+    width: clamp(8.125rem, 18vw, 12.5rem);
     height: 100%;
     object-fit: cover;
-    border-radius: 16px;
+    border-radius: 1rem;
     flex-shrink: 0;
-    border: 2px solid rgba(255, 255, 255);
+    border: 0.125rem solid rgba(255, 255, 255);
 }
 
 .eventContent {
@@ -37,44 +37,44 @@
 .eventName {
     margin: 0;
     color: white;
-    font-size: clamp(24px, 3vw, 40px);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
     line-height: 1.1;
-    text-shadow: calc(4px * var(--text-shadow-scale)) calc(4px * var(--text-shadow-scale)) 0 rgb(69, 69, 69);
+    text-shadow: calc(0.25rem * var(--text-shadow-scale)) calc(0.25rem * var(--text-shadow-scale)) 0 rgb(69, 69, 69);
     transition: font-size 0.2s ease;
 }
 
 .eventCard:hover .eventName {
-    font-size: clamp(25px, 3.1vw, 42px);
+    font-size: clamp(1.5625rem, 3.1vw, 2.625rem);
 }
 
 .eventDate {
-    margin: 8px 0 0;
+    margin: 0.5rem 0 0;
     color: white;
-    font-size: clamp(14px, 1.6vw, 20px);
+    font-size: clamp(0.875rem, 1.6vw, 1.25rem);
     font-weight: 800;
     letter-spacing: 0.03em;
-    text-shadow: calc(3px * var(--text-shadow-scale)) calc(3px * var(--text-shadow-scale)) 0 rgba(0, 0, 0, 0.5);
+    text-shadow: calc(0.1875rem * var(--text-shadow-scale)) calc(0.1875rem * var(--text-shadow-scale)) 0 rgba(0, 0, 0, 0.5);
 }
 
 .eventDescription {
-    margin: 12px 0 0;
+    margin: 0.75rem 0 0;
     color: rgba(255, 255, 255, 0.95);
-    font-size: clamp(14px, 1.3vw, 17px);
+    font-size: clamp(0.875rem, 1.3vw, 1.0625rem);
     font-weight: 500;
     line-height: 1.4;
-    text-shadow: calc(1px * var(--text-shadow-scale)) calc(1px * var(--text-shadow-scale)) 0 rgba(0, 0, 0, 0.35);
+    text-shadow: calc(0.0625rem * var(--text-shadow-scale)) calc(0.0625rem * var(--text-shadow-scale)) 0 rgba(0, 0, 0, 0.35);
 }
 
 .eventAccordionToggle {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     width: fit-content;
     background: rgba(0, 0, 0, 0.5);
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    padding: 8px 12px;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.625rem;
+    padding: 0.5rem 0.75rem;
     font-family: var(--font-secondary);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
     letter-spacing: 0.02em;
     cursor: pointer;
@@ -83,7 +83,7 @@
 
 .eventAccordionToggle:hover {
     background: rgba(255, 255, 255, 0.15);
-    transform: translateY(-1px);
+    transform: translateY(-0.0625rem);
 }
 
 .eventDescriptionWrap {
@@ -94,50 +94,50 @@
 }
 
 .eventDescriptionOpen {
-    max-height: 1000px;
+    max-height: 62.5rem;
     opacity: 1;
 }
 
 .eventMeta {
     font-family: var(--font-secondary);
     margin-top: auto;
-    padding-top: 14px;
+    padding-top: 0.875rem;
     color: white;
-    font-size: clamp(13px, 1.2vw, 15px);
+    font-size: clamp(0.8125rem, 1.2vw, 0.9375rem);
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-shadow: calc(2px * var(--text-shadow-scale)) calc(2px * var(--text-shadow-scale)) 0 rgba(0, 0, 0, 0.45);
+    text-shadow: calc(0.125rem * var(--text-shadow-scale)) calc(0.125rem * var(--text-shadow-scale)) 0 rgba(0, 0, 0, 0.45);
 }
 
 .eventLink {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     width: fit-content;
     text-decoration: none;
     color: white;
     font-family: var(--font-secondary);
-    font-size: clamp(13px, 1.1vw, 14px);
+    font-size: clamp(0.8125rem, 1.1vw, 0.875rem);
     font-weight: 800;
     letter-spacing: 0.02em;
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    padding: 8px 12px;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.7);
+    border-radius: 0.625rem;
+    padding: 0.5rem 0.75rem;
     background: rgba(0, 0, 0, 0.5);
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .eventLink:hover {
     background: rgba(255, 255, 255, 0.15);
-    transform: translateY(-1px);
+    transform: translateY(-0.0625rem);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
     .eventCard {
         align-items: flex-start;
     }
 
     .eventCard:hover .eventName {
-        font-size: clamp(24px, 3vw, 40px);
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
     }
 
     .eventCard:hover {
@@ -145,20 +145,20 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 43.75rem) {
     .eventCard {
         flex-direction: column;
-        border-radius: 16px;
+        border-radius: 1rem;
         margin-top: 0;
         width: 100%;
-        gap: 8px;
-        padding: 8px;
+        gap: 0.5rem;
+        padding: 0.5rem;
     }
 
     .eventImage {
         width: auto;
         max-width: 100%;
-        height: 170px;
+        height: 10.625rem;
         object-fit: contain;
         background: rgba(0, 0, 0, 0.25);
         align-self: center;
@@ -166,39 +166,39 @@
     }
 
     .eventName {
-        font-size: clamp(18px, 4.8vw, 24px);
+        font-size: clamp(1.125rem, 4.8vw, 1.5rem);
     }
 
     .eventCard:hover .eventName {
-        font-size: clamp(18px, 4.8vw, 24px);
+        font-size: clamp(1.125rem, 4.8vw, 1.5rem);
     }
 
     .eventDate {
-        margin-top: 2px;
-        font-size: clamp(12px, 2.9vw, 14px);
+        margin-top: 0.125rem;
+        font-size: clamp(0.75rem, 2.9vw, 0.875rem);
     }
 
     .eventAccordionToggle {
-        margin-top: 6px;
-        padding: 6px 10px;
-        font-size: 12px;
+        margin-top: 0.375rem;
+        padding: 0.375rem 0.625rem;
+        font-size: 0.75rem;
     }
 
     .eventDescription {
-        margin-top: 6px;
-        font-size: clamp(12px, 2.8vw, 14px);
+        margin-top: 0.375rem;
+        font-size: clamp(0.75rem, 2.8vw, 0.875rem);
         line-height: 1.35;
     }
 
     .eventMeta {
-        padding-top: 8px;
-        font-size: clamp(12px, 2.7vw, 13px);
+        padding-top: 0.5rem;
+        font-size: clamp(0.75rem, 2.7vw, 0.8125rem);
         line-height: 1.35;
     }
 
     .eventLink {
-        margin-top: 8px;
-        padding: 6px 10px;
-        font-size: 12px;
+        margin-top: 0.5rem;
+        padding: 0.375rem 0.625rem;
+        font-size: 0.75rem;
     }
 }
