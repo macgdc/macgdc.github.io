@@ -1,79 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap');
 
 @font-face {
-    font-family: 'Avenir Web';
-    src: url('/fonts/AvenirLTProRoman.woff2') format('woff2');
+    font-family: 'AvenirWebCustom';
+    src: local(''), url('/fonts/AvenirLTProRoman.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Avenir Web';
-    src: url('/fonts/AvenirLTProOblique.woff2') format('woff2');
+    font-family: 'AvenirWebCustom';
+    src: local(''), url('/fonts/AvenirLTProOblique.woff2') format('woff2');
     font-weight: 400;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Avenir Web';
-    src: url('/fonts/AvenirLTProMedium.woff2') format('woff2');
+    font-family: 'AvenirWebCustom';
+    src: local(''), url('/fonts/AvenirLTProMedium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Avenir Web';
-    src: url('/fonts/AvenirLTProMediumOblique.woff2') format('woff2');
+    font-family: 'AvenirWebCustom';
+    src: local(''), url('/fonts/AvenirLTProMediumOblique.woff2') format('woff2');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Avenir Web';
-    src: url('/fonts/AvenirLTProHeavy.woff2') format('woff2');
+    font-family: 'AvenirWebCustom';
+    src: local(''), url('/fonts/AvenirLTProHeavy.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Avenir Web';
-    src: url('/fonts/AvenirLTProHeavyOblique.woff2') format('woff2');
+    font-family: 'AvenirWebCustom';
+    src: local(''), url('/fonts/AvenirLTProHeavyOblique.woff2') format('woff2');
     font-weight: 700;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Avenir Web';
-    src: url('/fonts/AvenirLTProHeavy.woff2') format('woff2');
+    font-family: 'AvenirWebCustom';
+    src: local(''), url('/fonts/AvenirLTProHeavy.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Avenir Web';
-    src: url('/fonts/AvenirLTProBlack.woff2') format('woff2');
+    font-family: 'AvenirWebCustom';
+    src: local(''), url('/fonts/AvenirLTProBlack.woff2') format('woff2');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Avenir Web';
-    src: url('/fonts/AvenirLTProBlackOblique.woff2') format('woff2');
+    font-family: 'AvenirWebCustom';
+    src: local(''), url('/fonts/AvenirLTProBlackOblique.woff2') format('woff2');
     font-weight: 800;
     font-style: italic;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'AvenirWebCustom';
+    src: local(''), url('/fonts/AvenirLTProBlack.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
-    --font-secondary: 'Avenir Web', sans-serif;
+    --font-secondary: 'AvenirWebCustom', sans-serif;
     --text-shadow-scale: 1;
 }
 
@@ -165,6 +173,7 @@ hr {
     overflow-y: auto;
     list-style-type: none;
     background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px  rgba(0, 0, 0, 0.3);
     border: 0.125rem solid white;
 }
 

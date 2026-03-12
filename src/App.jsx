@@ -68,13 +68,13 @@ function App() {
                                 <h1 className={`${pageStyles.pageTitle} fadeIn`}> <i>SPONSORS</i> </h1>
                                 <hr className="fadeIn"/>
                                 <p className={`${pageStyles.pageLead} fadeIn`}>
-                                  Game jams are a core part of our club and let our members develop their skills. However, we wouldn't
+                                  Game jams are a core part of our club and help our members grow as game developers. However, we wouldn't
                                   be where we are now without our lovely sponsors. If you would like to reach out about sponsorship, please
                                   contact us! We are currently working on a new sponsorship package, but please download the current one for 
                                   more information on sponsorships. Sponsors will get added to our list below!</p>
                                 <div className={`${sponsorStyles.sponsorActions} fadeIn`}>
                                   <a href="mailto:macgdc@mcmaster.ca" className={sponsorStyles.sponsorActionBtn}>
-                                      <img src="/icons/email.svg" alt="Contact Us" />
+                                      <img src="/icons/email.png" alt="Contact Us" />
                                       <span>CONTACT US</span>
                                   </a>
                                   <a href="./MacGDC_Sponsorship_Package_2025.pdf" className={sponsorStyles.sponsorActionBtn} download>
