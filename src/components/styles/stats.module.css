@@ -49,7 +49,7 @@
     font-feature-settings: 'tnum' 1;
     color: white;
     font-weight: 600;
-    text-shadow: calc(0.1875rem * var(--text-shadow-scale)) calc(0.1875rem * var(--text-shadow-scale)) 0 #0a78ac, calc(0.375rem * var(--text-shadow-scale)) calc(0.375rem * var(--text-shadow-scale)) 0 #003a63;
+    text-shadow: calc(0.375rem * var(--text-shadow-scale)) calc(0.375rem * var(--text-shadow-scale)) 0 #003a63;
 }
 
 .statLabel {
@@ -59,7 +59,7 @@
     font-weight: 600;
     line-height: 1.15;
     letter-spacing: 0.05em;
-    text-shadow: calc(0.1875rem * var(--text-shadow-scale)) calc(0.1875rem * var(--text-shadow-scale)) 0 #0a78ac, calc(0.375rem * var(--text-shadow-scale)) calc(0.375rem * var(--text-shadow-scale)) 0 #003a63;
+    text-shadow: calc(0.375rem * var(--text-shadow-scale)) calc(0.375rem * var(--text-shadow-scale)) 0 #003a63;
 }
 
 .recurringLabel {
@@ -71,7 +71,7 @@
     margin-top: 0.25rem;
     max-width: 22ch;
     letter-spacing: 0.05em;
-    text-shadow: calc(0.0625rem * var(--text-shadow-scale)) calc(0.0625rem * var(--text-shadow-scale)) 0 #0a78ac, calc(0.1875rem * var(--text-shadow-scale)) calc(0.1875rem * var(--text-shadow-scale)) 0 #003a63;
+    text-shadow: calc(0.1875rem * var(--text-shadow-scale)) calc(0.1875rem * var(--text-shadow-scale)) 0 #003a63;
 }
 
 @media (max-width: 56.25rem) {
