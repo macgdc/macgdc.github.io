@@ -7,9 +7,9 @@ function Sponsors() {
             {/* GOLD TIER */}
             <div className={`${styles.tierSection} fadeIn`}>
                 <h2 className={styles.goldTierTitle}>
-                    <span className={styles.crown}>👑</span>
+                    <img src="/icons/crown.png" alt="crown" className={styles.crown} />
                     <i>GOLD TIER</i>
-                    <span className={styles.crown}>👑</span>
+                    <img src="/icons/crown.png" alt="crown" className={styles.crown} />
                 </h2>
                 <div className={styles.goldContainer}>
                     <SponsorCard 
