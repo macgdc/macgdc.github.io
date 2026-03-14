@@ -213,17 +213,16 @@ hr {
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 ::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.5);
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -231,6 +230,6 @@ hr {
 }
 
 * {
-    scrollbar-color: rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.1);
+    scrollbar-color: rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.3);
     scrollbar-width: thin;
 }
