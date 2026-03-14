@@ -35,3 +35,161 @@
     object-fit: contain;
     flex-shrink: 0;
 }
+
+.sponsorCard {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    background: none;
+    margin: 1rem 2rem;
+    padding: 0;
+}
+
+.sponsorCard:hover .sponsorImage {
+    filter: brightness(1.3) drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+    transform: scale(1.1);
+}
+
+.sponsorImage {
+    max-width: 500px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+
+
+.tierSection {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.goldTierTitle {
+    font-size: clamp(4rem, 7vw, 6rem);
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(calc(0.3rem * var(--text-shadow-scale)) calc(0.3rem * var(--text-shadow-scale)) 0 rgba(0, 0, 0, 0.5));
+    margin: 2rem 0 2.5rem;
+    font-weight: 900;
+    letter-spacing: 0.03em;
+    animation: goldGlow 3s ease-in-out infinite;
+}
+
+.silverTierTitle {
+    font-size: clamp(3.5rem, 6vw, 5rem);
+    background: linear-gradient(135deg, #FFFFFF, #B8B8B8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(calc(0.25rem * var(--text-shadow-scale)) calc(0.25rem * var(--text-shadow-scale)) 0 rgba(0, 0, 0, 0.5));
+    margin: 0 0 2rem;
+    padding: 0 1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    animation: silverGlow 2.5s ease-in-out infinite;
+}
+
+.crown {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.1em;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.crown:nth-of-type(2) {
+    animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes goldGlow {
+    0%, 100% {
+        text-shadow:
+            0 0 10px rgba(255, 215, 0, 0.5),
+            0 0 20px rgba(255, 165, 0, 0.3);
+    }
+    50% {
+        text-shadow:
+            0 0 20px rgba(255, 215, 0, 0.8),
+            0 0 30px rgba(255, 165, 0, 0.6),
+            0 0 40px rgba(255, 215, 0, 0.4);
+    }
+}
+
+@keyframes silverGlow {
+    0%, 100% {
+        text-shadow:
+            0 0 10px rgba(255, 255, 255, 0.5),
+            0 0 20px rgba(184, 184, 184, 0.3);
+    }
+    50% {
+        text-shadow:
+            0 0 20px rgba(255, 255, 255, 0.8),
+            0 0 30px rgba(184, 184, 184, 0.6),
+            0 0 40px rgba(184, 184, 184, 0.4);
+    }
+}
+
+.goldContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.silverContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width: 56.25rem) {
+    .tierSection {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .crown {
+        margin: 0 0.5rem;
+    }
+
+    .goldContainer {
+        gap: 1.5rem;
+    }
+
+    .silverContainer {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 26.875rem) {
+    .goldContainer {
+        gap: 1rem;
+    }
+
+    .silverContainer {
+        gap: 0.75rem;
+    }
+}

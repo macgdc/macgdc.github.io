@@ -213,18 +213,18 @@ hr {
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgb(45, 45, 45);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgb(200, 200, 200);
     border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgb(170, 170, 170)
 }
 
 * {
-    scrollbar-color: rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.3);
+    scrollbar-color: rgb(200, 200, 200) rgb(45, 45, 45);
 }

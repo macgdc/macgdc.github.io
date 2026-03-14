@@ -9,7 +9,7 @@ import Stats from './components/stats.jsx'
 import CurrentEvents from './components/events/currentevents.jsx';
 import PastEvents from './components/events/pastevents.jsx';
 import About from './components/about.jsx'
-import Sponsors from './components/sponsors.jsx';
+import Sponsors from './components/sponsors/sponsors.jsx';
 import Games from './components/games/games.jsx';
 import GamesPreview from './components/games/gamespreview.jsx';
 
