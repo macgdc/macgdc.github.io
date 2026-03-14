@@ -19,6 +19,7 @@ function Event({
                 src={imagePath}
                 alt={name}
                 className={styles.eventImage}
+                loading="lazy"
             />
             <div className={styles.eventContent}>
                 <h2 className={styles.eventName}>{name}</h2>

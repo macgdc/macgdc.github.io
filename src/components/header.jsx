@@ -7,7 +7,7 @@ function Header() {
             <div className={styles.navbar}>
                 <div className={styles.navLeft}>
                     <Link to="/">
-                        <img src="/icons/logo_white.svg" alt="Logo" className={styles.logo}/>
+                        <img src="/icons/logo_white.svg" alt="Logo" className={styles.logo} loading="lazy"/>
                     </Link>
                 </div>
                 <div className={styles.navRight}>

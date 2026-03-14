@@ -13,7 +13,7 @@ function GameCard( {
             target="_blank"
             rel="noreferrer"
         >
-            <img src={imagePath} alt={name} className={styles.gameCardBg} />
+            <img src={imagePath} alt={name} className={styles.gameCardBg} loading="lazy" />
             <div className={styles.gameCardOverlay}>
                 <p className={styles.gameCardName}>{name}</p>
                 <p className={styles.gameCardCreator}>by {creator}</p>

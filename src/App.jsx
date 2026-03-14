@@ -74,11 +74,11 @@ function App() {
                                   more information on sponsorships. Sponsors will get added to our list below!</p>
                                 <div className={`${sponsorStyles.sponsorActions} fadeIn`}>
                                   <a href="mailto:macgdc@mcmaster.ca" className={sponsorStyles.sponsorActionBtn}>
-                                      <img src="/icons/email.png" alt="Contact Us" />
+                                      <img src="/icons/email.png" alt="Contact Us" loading="lazy" />
                                       <span>CONTACT US</span>
                                   </a>
                                   <a href="./MacGDC_Sponsorship_Package_2025.pdf" className={sponsorStyles.sponsorActionBtn} download>
-                                      <img src="/icons/download.png" alt="Download"/>
+                                      <img src="/icons/download.png" alt="Download" loading="lazy"/>
                                       <span>DOWNLOAD SPONSOR PACKAGE</span>
                                   </a>
                                </div>
