@@ -62,7 +62,16 @@
     transition: all 0.3s ease;
 }
 
+@media (max-width: 56.25rem) {
+    .sponsorImage {
+        max-width: 200px;
+        max-height: 150px;
+    }
 
+    .sponsorCard {
+        margin: 0.5rem 0;
+    }
+}
 
 .tierSection {
     width: 100%;
@@ -74,7 +83,7 @@
 }
 
 .goldTierTitle {
-    font-size: clamp(4rem, 7vw, 6rem);
+    font-size: clamp(2rem, 7vw, 6rem);
     background: linear-gradient(135deg, #FFD700, #FFA500);
     -webkit-background-clip: text;
     background-clip: text;
@@ -87,7 +96,7 @@
 }
 
 .silverTierTitle {
-    font-size: clamp(3.5rem, 6vw, 5rem);
+    font-size: clamp(1.75rem, 6vw, 5rem);
     background: linear-gradient(135deg, #FFFFFF, #B8B8B8);
     -webkit-background-clip: text;
     background-clip: text;
@@ -181,6 +190,14 @@
     .tierSection {
         width: 90%;
         margin: 2rem auto;
+    }
+
+    .goldTierTitle {
+        font-size: clamp(1.5rem, 7vw, 3rem);
+    }
+
+    .silverTierTitle {
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
     }
 
     .crown {
