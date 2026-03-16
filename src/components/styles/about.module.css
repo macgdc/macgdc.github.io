@@ -5,13 +5,13 @@
     align-content: flex-start;
     margin: 2em auto 4em;
     gap: 1rem;
-    width: 80%;
+    width: 75%;
     height: auto;
 }
 
 .execCard {
-    height: 450px;
-    width: calc(20% - 0.8rem);
+    height: 400px;
+    width: calc(33.33% - 1.333rem);
     box-shadow: 7px 7px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     color: inherit;
