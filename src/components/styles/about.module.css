@@ -1,18 +1,18 @@
-.gamesPreviewList {
+.execsPreviewList {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-start;
     margin: 2em auto 4em;
     gap: 1rem;
-    width: 70%;
-    height: 70vh;
+    width: 80%;
+    height: auto;
 }
 
-.gameCard {
-    height: 50%;
-    width: calc(33.333% - 1rem);
-    box-shadow: 7px 7px  rgba(0, 0, 0, 0.5);
+.execCard {
+    height: 450px;
+    width: calc(20% - 0.8rem);
+    box-shadow: 7px 7px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     color: inherit;
     cursor: pointer;
@@ -21,9 +21,10 @@
     position: relative;
     display: flex;
     align-items: flex-end;
+    background: #1a1a1a;
 }
 
-.gameCardBg {
+.execImage {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -33,29 +34,31 @@
     z-index: 0;
 }
 
-.gameCard:hover .gameCardBg {
+.execCard:hover .execImage {
     transform: scale(1.07);
 }
 
-.gameCardOverlay {
+.execInfo {
     position: relative;
     width: 100%;
     min-height: 30%;
-    padding: 0.75rem 1rem;
+    padding: 1.25rem 1rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    z-index: 1;
+    text-align: center;
 }
 
-.gameCardOverlay::before {
+.execInfo::before {
     content: "";
     position: absolute;
     top: -50%;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 0;
+    z-index: -1;
     transform-origin: bottom;
     transition: transform 0.25s ease;
     background: linear-gradient(
@@ -66,46 +69,51 @@
     );
 }
 
-.gameCardName {
-    position: relative;
-    z-index: 1;
-    margin: 0;
-    color: white;
-    font-weight: 800;
-    font-size: clamp(1rem, 1.5vw, 1.375rem);
-    line-height: 1.15;
-    transition: transform 0.25s ease;
-    text-shadow: calc(0.125rem * var(--text-shadow-scale)) calc(0.125rem * var(--text-shadow-scale)) 0 rgba(0, 0, 0, 0.6);
-}
-
-.gameCardCreator {
-    position: relative;
-    z-index: 1;
-    margin: 0.25rem 0 0;
-    color: rgba(255, 255, 255, 0.95);
-    font-size: clamp(0.8125rem, 1.1vw, 1rem);
-    font-weight: 600;
-    line-height: 1.2;
-    transition: transform 0.25s ease;
-    text-shadow: calc(0.0625rem * var(--text-shadow-scale)) calc(0.0625rem * var(--text-shadow-scale)) 0 rgba(0, 0, 0, 0.6);
-}
-
-.gameCard:hover .gameCardOverlay::before {
+.execCard:hover .execInfo::before {
     transform: scaleY(1.05);
 }
 
-.gameCard:hover .gameCardName,
-.gameCard:hover .gameCardCreator {
+.execName {
+    margin: 0;
+    color: white;
+    font-weight: 800;
+    font-size: clamp(1.1rem, 1.5vw, 1.375rem);
+    line-height: 1.15;
+    transition: transform 0.25s ease;
+}
+
+.execRole {
+    margin: 0.25rem 0 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: clamp(0.8125rem, 1.1vw, 1rem);
+    font-weight: 600;
+    line-height: 1.2;
+    font-style: normal;
+    transition: transform 0.25s ease;
+}
+
+.execCard:hover .execName,
+.execCard:hover .execRole {
     transform: translateY(-0.125rem);
 }
 
-@media (max-width: 56.25rem) {
-    .gamesPreviewList {
+@media (max-width: 64rem) {
+    .execsPreviewList {
         width: 90%;
     }
+    .execCard {
+        width: calc(33.333% - 0.7rem); 
+    }
+}
 
-    .gameCard {
+@media (max-width: 48rem) {
+    .execCard {
         width: calc(50% - 0.5rem);
-        height: 33.33%;
+    }
+}
+
+@media (max-width: 30rem) {
+    .execCard {
+        width: 100%;
     }
 }
