@@ -4,7 +4,7 @@
     align-items: center;
     padding: 0 clamp(0.875rem, 2.6vw, 2.5rem);
     width: 95vw;
-    min-height: 60vh;
+    min-height: 30rem;
     height: auto;
     background-color: rgba(0, 0, 0, 0.15);
     border-radius: 2.5rem;
