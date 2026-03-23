@@ -9,6 +9,22 @@ function PastEvents() {
             <ul className={`eventBG ${styles.eventBg} fadeIn`}>
                 {/* Please archive old events by placing the newest at the top! - Aiden */}
                 <li><Event
+                    name="Visual Novel Workshop 2026"
+                    description={<>
+                    Our second event of the game jam is here! Join us and the McMaster Fanfiction Club for a tutorial 
+                    on how to create your very own visual novel using ren'py! All skill levels are welcome, and this 
+                    is a perfect opportunity for you if you don't know how to code, since ren'py is a beginner-friendly
+                    tool that we'll be showing you how to use step-by-step. The Visual Novel Workshop will be taking place 
+                    Monday, March 16, 6:30 - 9:00 PM in ETB 119, we hope to see you there!<br/>
+                    A recording of the event is available below!
+                    </>}
+                    date = "March 16th, 2026"
+                    imagePath = '/images/events/visualnovel.png'
+                    location = 'ETB 119'
+                    time = '6:30PM - 9:00 PM'
+                    link = "https://www.youtube.com/watch?v=h8l1EBVsnLA"
+                /></li>
+                <li><Event
                     name="Gender Diversity in Game Dev"
                     description={<>
                     Computer Science Society and MacGDC are teaming up to bring you the first event in our Game Jam 2026 schedule: 

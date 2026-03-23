@@ -26,19 +26,19 @@ function CurrentEvents( { home = false } ) {
                 /></li>
 
                 <li><Event
-                    name="Visual Novel Workshop 2026"
+                    name="Music Production Workshop"
                     description={<>
-                    Our second event of the game jam is here! Join us and the McMaster Fanfiction Club for a tutorial 
-                    on how to create your very own visual novel using ren'py! All skill levels are welcome, and this 
-                    is a perfect opportunity for you if you don't know how to code, since ren'py is a beginner-friendly
-                    tool that we'll be showing you how to use step-by-step. The Visual Novel Workshop will be taking place 
-                    Monday, March 16, 6:30 - 9:00 PM in ETB 119, we hope to see you there!
+                    Join us for our third event of the game jam, a workshop all about music production! Come learn the basics of the music
+                    production process in the context of gamedev, and create your very own video game music using Bandlab, a free online 
+                    music creation tool! The Music Production Workshop will be taking place Monday, March 23, 6:30 - 8:30 PM in BSB 104, 
+                    we hope to see you there!
                     </>}
-                    date = "March 16th, 2026"
-                    imagePath = '/images/events/visualnovel.png'
-                    location = 'ETB 119'
-                    time = '6:30PM - 9:00 PM'
+                    date = "March 23rd, 2026"
+                    imagePath = '/images/events/musicprod2026.png'
+                    location = 'BSB 104'
+                    time = '6:30PM - 8:30 PM'
                 /></li>
+
 
                 <li><Event
                     name="Gamedev Circles"
