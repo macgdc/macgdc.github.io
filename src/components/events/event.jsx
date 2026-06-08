@@ -8,10 +8,10 @@ function Event({
     imagePath = '/icons/logo_white.svg',
     location = 'N/A',
     time = 'N/A',
-    link = '',
+    links = {},
 }) {
     const [isDescriptionOpen, setIsDescriptionOpen] = useState(false)
-    const hasLink = link.trim().length > 0
+    const linkEntries = Object.entries(links).filter(([, url]) => typeof url === 'string' && url.trim().length > 0)
 
     return (
         <div className={`${styles.eventCard} fadeIn`}>
@@ -40,15 +40,20 @@ function Event({
                     <u>Location:</u> {location} <br/> 
                     <u>Time:</u> {time}
                 </div>
-                {hasLink && (
-                    <a
-                        href={link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.eventLink}
-                    >
-                        Open Event Link
-                    </a>
+                {linkEntries.length > 0 && (
+                    <div className={styles.eventLinks}>
+                        {linkEntries.map(([label, url]) => (
+                            <a
+                                key={label}
+                                href={url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.eventLink}
+                            >
+                                {label}
+                            </a>
+                        ))}
+                    </div>
                 )}
             </div>
         </div>

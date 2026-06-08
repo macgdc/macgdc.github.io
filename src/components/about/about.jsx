@@ -16,15 +16,10 @@ function About() {
             <h1 className={`${styles2.sectionTitle} ${styles2.sectionTitleCentered} fadeIn`}> 
                         <i>OUR TEAM</i> </h1>
             <div className={`${aboutStyles.execsPreviewList} fadeIn`}>
-                <Exec
-                    name="Thomas Plagakis"
-                    role="President"
-                    imagePath="/icons/logo_white.svg"
-                    link="https://www.linkedin.com/in/tplagakis/"
-                />
+
                 <Exec
                     name="Aidan Heathfield"
-                    role="Vice-President of Finance, Workshop Exec"
+                    role="President"
                     imagePath="/icons/logo_white.svg"
                     link="https://www.linkedin.com/in/aidan-heathfield/"
                 />
@@ -72,7 +67,16 @@ function About() {
                 />
             </div>
 
-
+            <h1 className={`${styles2.sectionTitle} ${styles2.sectionTitleCentered} fadeIn`}> 
+                        <i>FORMER EXECS</i> </h1>
+            <div className={`${aboutStyles.execsPreviewList} fadeIn`}>
+                <Exec
+                    name="Thomas Plagakis"
+                    role="President (2024-2026)"
+                    imagePath="/icons/logo_white.svg"
+                    link="https://www.linkedin.com/in/tplagakis/"
+                />
+            </div>
         </>
     );
 
