@@ -20,7 +20,7 @@ function PastEvents() {
                     <br/>
                     UPDATE: The game jam has concluded! Please check out the linked video on YouTube to see the winners. Thank you to everyone who participated!
                     </>}
-                    date = "March 5th - March 26th, 2026 (Active Now!)"
+                    date = "March 5th - March 26th, 2026"
                     imagePath = '/images/events/gamejam2026.png'
                     location = 'N/A'
                     time = 'N/A'

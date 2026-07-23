@@ -24,22 +24,16 @@ function About() {
                     link="https://www.linkedin.com/in/aidan-heathfield/"
                 />
                 <Exec
-                    name="Raymond Ke"
-                    role="Vice-President of Events, Workshop Exec"
-                    imagePath="/icons/logo_white.svg"
-                    link="https://www.linkedin.com/in/raymond-ke-564935260/"
-                />
-                <Exec
                     name="Braden Chan"
                     role="Vice-President of Communication, Marketing Exec"
                     imagePath="/icons/logo_white.svg"
                     link="https://www.linkedin.com/in/raymond-ke-564935260/"
                 />
                 <Exec
-                    name="Jay Seoh"
-                    role="Workshop Exec"
+                    name="Aiden Ly"
+                    role="Vice-President of Events, Web Developer"
                     imagePath="/icons/logo_white.svg"
-                    link="https://www.linkedin.com/in/jay-seoh/"
+                    link="https://www.linkedin.com/in/aidenly"
                 />
                 <Exec
                     name="Muiz Hamzat"
@@ -59,12 +53,7 @@ function About() {
                     imagePath="/icons/logo_white.svg"
                     link="https://www.linkedin.com/in/muhammad-zain-haque-b7771b2b0/"
                 />
-                <Exec
-                    name="Aiden Ly"
-                    role="Web Developer Exec, Workshop Exec"
-                    imagePath="/icons/logo_white.svg"
-                    link="https://www.linkedin.com/in/aidenly"
-                />
+
             </div>
 
             <h1 className={`${styles2.sectionTitle} ${styles2.sectionTitleCentered} fadeIn`}> 
@@ -75,6 +64,18 @@ function About() {
                     role="President (2024-2026)"
                     imagePath="/icons/logo_white.svg"
                     link="https://www.linkedin.com/in/tplagakis/"
+                />
+                <Exec
+                    name="Raymond Ke"
+                    role="Vice-President of Events, Workshop Exec"
+                    imagePath="/icons/logo_white.svg"
+                    link="https://www.linkedin.com/in/raymond-ke-564935260/"
+                />
+                <Exec
+                    name="Jay Seoh"
+                    role="Workshop Exec"
+                    imagePath="/icons/logo_white.svg"
+                    link="https://www.linkedin.com/in/jay-seoh/"
                 />
             </div>
         </>

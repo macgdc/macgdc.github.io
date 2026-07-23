@@ -12,41 +12,60 @@ function GamesPreview() {
         <p className={`${styles.pageLead} fadeIn`}>Please check out these games created by our talented members!</p>
         <div className={`${styles3.gamesPreviewList} fadeIn`}>
             <GameCard
-                name="SHIO."
+                name="Horse Magnifier"
+                creator="sketbordcat"
+                imagePath="./images/games/horsemagnifier.jpg"
+                link="https://store.steampowered.com/app/4585340/Horse_Magnifier_The_Full_Horse/"
+            />
+            <GameCard
+                name="Spectre"
+                creator="Alkyline"
+                imagePath="./images/games/spectre.png"
+                link="https://alkyline.itch.io/spectre"
+            />
+            <GameCard
+                name="2200"
                 creator="471"
-                imagePath="./images/games/shio.png"
-                link="https://313248317-51.itch.io/shio"
+                imagePath="./images/games/2200.png"
+                link="https://313248317-51.itch.io/2200"
             />
             <GameCard
-                name="10:30"
-                creator="egg_shells"
-                imagePath="./images/games/1030.png"
-                link="https://egg-shells.itch.io/1030-pm"
+                name="Lumen"
+                creator="gullyngames, sophistryy, iMathII"
+                imagePath="./images/games/lumen.png"
+                link="https://gullyngames.itch.io/lumen"
             />
             <GameCard
-                name="Kronological Order"
-                creator="InboundMink8558, Aidan Heathfield, prismoid, Ponitia"
-                imagePath="./images/games/kronologicalorder.png"
-                link="https://inboundmink8558.itch.io/kronological-order"
+                name="Inhuman Resources"
+                creator="coolfontsonline, kazuriae"
+                imagePath="./images/games/inhuman.png"
+                link="https://coolfontsonline.itch.io/inhuman-resources"
             />
             <GameCard
-                name="Spaced Out"
-                creator="B-rando"
-                imagePath="./images/games/spacedout.png"
-                link="https://b-rando.itch.io/spaced-out"
+                name="Schrodinger's Blind Date!?"
+                creator="Goloob"
+                imagePath="./images/games/schrodinger.png"
+                link="https://goloob.itch.io/schrodingers-blind-date"
             />
             <GameCard
-                name="Desmond the Moon Bear"
-                creator="CowSoCool37, EricMBu"
-                imagePath="./images/games/desmond.png"
-                link="https://cowsocool37.itch.io/desmond-the-moon-bear"
+                name="Vocualize"
+                creator="Thagamersbuffet, prismoid"
+                imagePath="./images/games/vocualize.png"
+                link="https://thagamersbuffet.itch.io/vocualize"
             />
             <GameCard
-                name="Bluescreen"
-                creator="Shivermist"
-                imagePath="./images/games/bluescreen.png"
-                link="https://shivermist.itch.io/bluescreen"
+                name="Truth"
+                creator="frozenmonke, danya99, HaidenCMD, Valestar"
+                imagePath="./images/games/truth.png"
+                link="https://frozenmonke.itch.io/truth"
             />
+            <GameCard
+                name="Snow By Dawn"
+                creator="InboundMink8558, Ponitia, Aidan Heathfield, Owen Johnson"
+                imagePath="./images/games/snowbydawn.png"
+                link="https://inboundmink8558.itch.io/snow-by-dawn"
+            />
+            
  
         </div>
         </>
