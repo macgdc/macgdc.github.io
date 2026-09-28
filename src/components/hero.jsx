@@ -51,9 +51,9 @@ function Hero() {
                         <img src="/icons/youtube.webp" alt="YouTube" loading="lazy" />
                         <span>YOUTUBE</span>
                     </a>
-                    <a href="https://www.bouncelife.com/organizations/6686e1838b391c59c2a6f9df" target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>
-                        <img src="/icons/bouncelife.png" alt="Bouncelife" loading="lazy" />
-                        <span>BOUNCELIFE</span>
+                    <a href="https://campus.hellorubric.com/?s=16527" target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>
+                        <img src="/icons/rubric.png" alt="Rubric" loading="lazy" />
+                        <span>RUBRIC</span>
                     </a>
                     <a href="https://linktr.ee/macgdc" target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>
                         <img src="/icons/linktree-white-icon.webp" alt="Linktree" loading="lazy" />

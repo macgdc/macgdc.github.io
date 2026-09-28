@@ -36,6 +36,12 @@ function About() {
                     link="https://www.linkedin.com/in/aidenly"
                 />
                 <Exec
+                    name="Mylyna Ly"
+                    role="Vice-President of Finance"
+                    imagePath="/icons/logo_white.svg"
+                    link=""
+                />
+                <Exec
                     name="Muiz Hamzat"
                     role="Workshop Exec"
                     imagePath="/icons/logo_white.svg"
@@ -52,6 +58,84 @@ function About() {
                     role="Workshop Exec, Marketing Exec"
                     imagePath="/icons/logo_white.svg"
                     link="https://www.linkedin.com/in/muhammad-zain-haque-b7771b2b0/"
+                />
+                <Exec
+                    name="Irene Runsewe"
+                    role="General Exec"
+                    imagePath="/icons/logo_white.svg"
+                    link=""
+                />
+                <Exec
+                    name="Zachary Hunter"
+                    role="Workshop Exec"
+                    imagePath="/icons/logo_white.svg"
+                    link=""
+                />
+                <Exec
+                    name="Guranshjot Singh"
+                    role="Marketing Exec"
+                    imagePath="/icons/logo_white.svg"
+                    link=""
+                />
+                <Exec
+                    name="Harrison Johns"
+                    role="Workshop Exec"
+                    imagePath="/icons/logo_white.svg"
+                    link=""
+                />
+                <Exec
+                    name="Adam Meddah"
+                    role="Club Game/Workshop Exec"
+                    imagePath="/icons/logo_white.svg"
+                    link=""
+                />
+                <Exec
+                    name="Jingyu Byun"
+                    role="Club Game/Workshop Exec"
+                    imagePath="/icons/logo_white.svg"
+                    link=""
+                />
+                <Exec
+                    name="Alyssa Francella"
+                    role="Marketing Exec"
+                    imagePath="/icons/logo_white.svg"
+                    link=""
+                />
+                <Exec
+                    name="Cici Zhu"
+                    role="Club Game Exec"
+                    imagePath="/icons/logo_white.svg"
+                    link=""
+                />
+                <Exec
+                    name="Emma Callaghan"
+                    role="Marketing Exec"
+                    imagePath="/icons/logo_white.svg"
+                    link=""
+                />
+                <Exec
+                    name="Logan Lau-McLennan"
+                    role="Club Game/Workshop Exec"
+                    imagePath="/icons/logo_white.svg"
+                    link=""
+                />
+                <Exec
+                    name="Safiya Salman"
+                    role="Marketing Exec"
+                    imagePath="/icons/logo_white.svg"
+                    link=""
+                />
+                <Exec
+                    name="Tucker Yang"
+                    role="Club Game/Workshop Exec"
+                    imagePath="/icons/logo_white.svg"
+                    link=""
+                />
+                <Exec
+                    name="Mahnoor Naveed"
+                    role="Club Game/Workshop Exec"
+                    imagePath="/icons/logo_white.svg"
+                    link=""
                 />
 
             </div>
