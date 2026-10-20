@@ -70,14 +70,13 @@ function App() {
                                 <p className={`${pageStyles.pageLead} fadeIn`}>
                                   Game jams are a core part of our club and help our members grow as game developers. However, we wouldn't
                                   be where we are now without our lovely sponsors. If you would like to reach out about sponsorship, please
-                                  contact us! We are currently working on a new sponsorship package, but please download the current one for 
-                                  more information on sponsorships. Sponsors will get added to our list below!</p>
+                                  contact us! Download our current sponsorship package for our next big event, the Microgame Jam, for more information! Sponsors will get added to our list below!</p>
                                 <div className={`${sponsorStyles.sponsorActions} fadeIn`}>
                                   <a href="mailto:macgdc@mcmaster.ca" className={sponsorStyles.sponsorActionBtn}>
                                       <img src="/icons/email.png" alt="Contact Us" loading="lazy" />
                                       <span>CONTACT US</span>
                                   </a>
-                                  <a href="./MacGDC_Sponsorship_Package_2025.pdf" className={sponsorStyles.sponsorActionBtn} download>
+                                  <a href="./MacGDC_Sponsorship_Package_Microgame_Jam.pdf" className={sponsorStyles.sponsorActionBtn} download>
                                       <img src="/icons/download.png" alt="Download" loading="lazy"/>
                                       <span>DOWNLOAD SPONSOR PACKAGE</span>
                                   </a>
