@@ -18,6 +18,9 @@ If you can't make it I believe the workshop will be recorded! Hope to see you th
                     imagePath = '/images/events/pixelart2026-2.png'
                     location = 'ETB 224'
                     time = '7:00PM - 9:00PM'
+                    links = {{
+                    'Workshop Recording': 'https://youtu.be/pMCQoFUYqjo'
+                    }}
                 /></li>
                 <li><Event
                     name="General Meeting + Beginner Godot Workshop 2026"
