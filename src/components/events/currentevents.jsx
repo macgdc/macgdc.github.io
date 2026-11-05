@@ -45,17 +45,7 @@ function CurrentEvents( { home = false } ) {
                     }}
                 /></li>
 
-                <li><Event
-                    name="Pixel Art Workshop - Fall 2026"
-                    description={<>
-                   Come swing by if you have the chance to learn some very beginner friendly information on the world of pixel art! The first half will be some information and a walk-through of some skill that I find useful when making pixel art. The second half will be the workshop portion where we get to have fun and get some practice in on character making and art! :)
-If you can't make it I believe the workshop will be recorded! Hope to see you there!!!!!!!
-                    </>}
-                    date = "October 29th, 2026"
-                    imagePath = '/images/events/pixelart2026-2.png'
-                    location = 'ETB 224'
-                    time = '7:00PM - 9:00PM'
-                /></li>
+                
 
                 <li><Event
                     name="Gamedev Circles"
