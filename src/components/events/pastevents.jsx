@@ -8,6 +8,46 @@ function PastEvents() {
             <i>PAST EVENTS</i> </h1>
             <ul className={`eventBG ${styles.eventBg} fadeIn`}>
                 {/* Please archive old events by placing the newest at the top! - Aiden */}
+
+                <li><Event
+                    name="Microgame Jam Awards Ceremony / CSS Game Night 2026"
+                    description={<>
+UPDATE: Congrats to the winners! The microgames are now playable with the link below!
+
+This is a joint event in collaboration with the Computer Science Society (CSS)! Come visit us on Tuesday, November 10th from 7-9PM in BSB 115 to play games, socialize, and unwind after your tests (i wish you luck if you still have any...)! there will be both party games hooked up to the screens and laptops for you to play all of the microgame submissions compiled into one game! do well enough and you may get entries to our cash prize raffle 👀 ........ did i also mention that there's free snacks??? 
+
+we will announce the winners of the microgame jam on the big screen near the middle/end of the event! you do NOT need to have made a game to come, so feel free to bring any friends along! thank you to all those who participated and we hope to see you there! 
+
+
+                    </>}
+                    date = "November 10th, 2026"
+                    imagePath = '/images/events/microgameawards2026.png'
+                    location = 'Online (Awards Ceremony will be announced later!)'
+                    time = '7-9PM'
+                    links = {{
+                    'Discord': 'https://discord.com/invite/Gsvp8JKF66',
+                    'Microgames (itch.io)': 'https://macgdc.itch.io/microgame-jam-2026',
+                    }}
+                /></li>
+
+                <li><Event
+                    name="Microgame Jam 2026"
+                    description={<>
+                    This is our first beginner-friendly game jam of the year, where participants create short "microgames" (like warioware!) in Godot using a provided template! 
+                    The top three winners will be announced during our awards ceremony at a later date (will have free food, games, and a raffle with cash prizes!!!)..... Keep an eye out for it!!
+                    The jam will start on Oct 26 and ending on Nov 7, and don't worry about having no experience because we'll also be hosting a Microgame Workshop on Oct 26, 6:30-8:30PM, in ETB 124 to teach you how to make your own microgame!!! it will be recorded (hopefully), so don't stress if you can't make it! DID I MENTION THERE'S ALSO FREE PIZZA???? Check our Discord for additional info!
+                    You can either work solo or with a group, but keep in mind that the prize money will be split amongst you if you win! we're very excited for all of you to participate and to see all of your submissions!!!! we hope to see you all there on monday!!!!!
+
+                    </>}
+                    date = "October 26th - November 7th, 2026"
+                    imagePath = '/images/events/microgame2026.jpg'
+                    location = 'Online'
+                    time = 'N/A'
+                    links = {{
+                    'Discord': 'https://discord.com/invite/Gsvp8JKF66',
+                    'Workshop Recording': 'https://www.youtube.com/watch?v=uPUgo5ECEls'
+                    }}
+                /></li>
                 <li><Event
                     name="Pixel Art Workshop - Fall 2026"
                     description={<>
